@@ -1,11 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <h1>xxxxx</h1>
-</body>
+    <!-- Css externo -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!--Css interno || css critico -->
+    <style>
+      section {
+        background-color: forestgreen;
+        border: 2px solid black;
+      }
+      main {
+        background-color: rgba(13, 248, 185, 0.975);
+        border: 5px solid yellow;
+      }
+      .principal {
+        background-color: rgba(225, 149, 9, 0.975);
+        border: 5px solid rgb(37, 17, 221);
+      }
+      #app {
+        background-color: rgba(33, 205, 11, 0.975);
+        border: 5px solid rgb(186, 26, 26);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Inicial</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!--
+    nomedaTag = nomeSeletor (prioridade 0,0,1)
+    . = class               (prioridade 0,1,0)
+    # = id                  (prioridade 1,0,0) - maior prioridade
+    -->
+    <main class="principal" id="app">
+      <h1>Aqui é o documento principal</h1>
+      <section>
+        <h2>Aqui é uma seção</h2>
+      </section>
+    </main>
+    <!-- Css inline -->
+    <footer
+      style="background-color: black; border: 3px dashed red; color: aqua"
+    >
+      <h1>
+        Aqui é o roda pé
+      </h1>
+      <ul>
+        <li><a href="#">Inicial</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </footer>
+  </body>
 </html>
